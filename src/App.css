@@ -1,0 +1,38 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* ===== Main App Container ===== */
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Page Content Area ===== */
+.main-content > *:not(nav) {
+  padding: 2rem;
+  flex: 1;
+}
+
+/* ===== Smooth Animations ===== */
+a {
+  transition: all 0.3s ease;
+}
+
+/* ===== Utility Container (Optional) ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}

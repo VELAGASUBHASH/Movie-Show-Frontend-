@@ -1,0 +1,84 @@
+/* ===== Home Page Container ===== */
+.home {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Search Form ===== */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ===== Search Input ===== */
+.search-input {
+  width: 350px;
+  max-width: 100%;
+  padding: 0.85rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.search-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+  background-color: #ffffff;
+}
+
+/* ===== Search Button ===== */
+.submit-button {
+  padding: 0.85rem 1.6rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #38bdf8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(56, 189, 248, 0.3);
+}
+
+/* ===== Grid Layout (FORCED ROW FORMAT) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 cards per row */
+  gap: 2rem;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Empty State ===== */
+.grid:empty::after {
+  content: "No Movie found";
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem 0;
+  color: #64748b;
+}

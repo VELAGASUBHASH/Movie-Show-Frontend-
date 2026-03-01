@@ -1,0 +1,31 @@
+/* ===== CSS Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Settings ===== */
+html, body {
+  height: 100%;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Remove default link styling ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
