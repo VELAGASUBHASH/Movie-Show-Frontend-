@@ -1,5 +1,7 @@
 # 🎬 Movie Show App
 
+Live Preview Of Project : https://movieshow-one.vercel.app/
+
 A modern React Movie App built using **TMDB API**.  
 Users can browse popular movies, search movies, and add/remove favorites.
 
